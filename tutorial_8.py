@@ -11,8 +11,11 @@ pygame.display.set_caption("first game")
 img_base_path = os.getcwd() + '/img/'
 music_base_path = os.getcwd() + "/music/"
 bg = pygame.image.load(img_base_path + 'bg.jpg')
+# 加载背景音乐
 pygame.mixer.music.load(music_base_path + "music.mp3")
+# 设置音量
 pygame.mixer.music.set_volume(0.1)
+# 循环播放
 pygame.mixer.music.play(-1, 0)
 
 clock = pygame.time.Clock()
@@ -20,6 +23,7 @@ clock = pygame.time.Clock()
 _sound_library = {}
 
 
+# 播放音效(与背景音乐可同时播放，但默认只支持wav格式)
 def play_sound(path):
     global _sound_library
     sound = _sound_library.get(path)
@@ -88,6 +92,7 @@ while run:
         man.life -= 1
         # 自动跳跃，防止血降得太快
         man.isJump = True
+        # 播放音效
         play_sound(music_base_path + "hit.wav")
 
     for b in bullets:
@@ -96,6 +101,7 @@ while run:
             score += 1
             enemy.life -= 1
             bullets.pop(bullets.index(b))
+            # 播放音效
             play_sound(music_base_path + "hit.wav")
 
         if WIN_WIDTH > b.x > 0:
@@ -106,6 +112,7 @@ while run:
     keys = pygame.key.get_pressed()
 
     if keys[pygame.K_SPACE]:
+        # 播放音效
         play_sound(music_base_path + 'bullet.wav')
         if man.left:
             direction = -1
