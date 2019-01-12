@@ -1,20 +1,23 @@
-import pygame
 import os
+import pygame
 
 pygame.init()
 
-win = pygame.display.set_mode((400, 400))  # 画布窗口的大小
+clock = pygame.time.Clock()
+
+WIN_SIZE = 400, 400
+win = pygame.display.set_mode(WIN_SIZE)  # 画布窗口的大小
 pygame.display.set_caption("first game")  # 窗口标题
 img_base_path = os.getcwd() + '/img/'
 
 
 class Ship(object):
 
-    def __init__(self, x, y, vx, vy, img_base_path):
+    def __init__(self, x, y, img_base_path):
         self.x = x
         self.y = y
-        self.vx = vx
-        self.vy = vy
+        self.vx = 0
+        self.vy = 0
         self.flame = False
         self.img_shutdown = pygame.image.load(img_base_path + 'ship.png')
         self.img_flame = pygame.image.load(img_base_path + 'ship_flame.png')
@@ -28,8 +31,10 @@ class Ship(object):
             win.blit(self.img_flame, (self.x, self.y))
 
     def move(self):
-        self.x += self.vx
-        self.y += self.vy
+        # self.x += self.vx
+        # self.y += self.vy
+        rect = self.img_shutdown.get_rect()
+        rect.move(self.vx, self.vy)
 
     def scale(self, scale):
         if scale == self.img_scale:
@@ -41,12 +46,15 @@ class Ship(object):
             self.img_scale = scale
 
     def rotate(self, angle):
-        if angle == self.img_rotate:
-            pass
-        else:
-            self.img_shutdown = pygame.transform.rotate(self.img_shutdown, angle)
-            self.img_flame = pygame.transform.rotate(self.img_flame, angle)
-            self.img_rotate = angle
+        # if angle == self.img_rotate:
+        #     pass
+        # else:
+        # origin_pos = self.x, self.y
+        self.img_shutdown = pygame.transform.rotate(self.img_shutdown, angle)
+        self.img_flame = pygame.transform.rotate(self.img_flame, angle)
+        self.img_rotate = angle
+        # self.x = origin_pos[0]
+        # self.y = origin_pos[1]
 
     def start(self):
         self.flame = True
@@ -55,26 +63,38 @@ class Ship(object):
         self.flame = False
 
 
-run = True
-ship = Ship(100, 100, 1, 0, img_base_path)
-while run:
-    # 防止cpu占用过高
-    pygame.time.delay(20)
+ship = Ship(WIN_SIZE[0] / 2, WIN_SIZE[1] / 2, img_base_path)
+# ship.scale(0.5)
+rotate = 0
+ship.vx = 1
+while True:
+    clock.tick(10)
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            run = False
+            pygame.quit()
+        keys = pygame.key.get_pressed()
+        if keys[pygame.K_LEFT]:
+            rotate += 1
+            ship.rotate(rotate)
+        elif keys[pygame.K_RIGHT]:
+            rotate -= 1
+            ship.rotate(rotate)
+        elif keys[pygame.K_UP]:
+            ship.vy = -1
+            ship.start()
+        elif keys[pygame.K_DOWN]:
+            ship.vy = 0
+            ship.shutdown()
 
     # 将每一帧的底色先填充成黑色
     win.fill((255, 255, 255))
 
     ship.draw(win)
     ship.move()
-    ship.start()
-    ship.scale(0.8)
-    ship.rotate(90)
+
+    # ship.rotate(90)
+    # print(ship.img_shutdown.get_rect())
 
     # 更新画布
     pygame.display.update()
-
-pygame.quit()
