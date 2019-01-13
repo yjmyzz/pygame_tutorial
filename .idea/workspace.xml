@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f10fa4c-fa7e-4f3c-9d33-8dea141b77f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leaf_01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leaf_02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leaf_02_b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leaf_03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rect.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study_02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study_03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ship_flame_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ship_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/move_01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/move_02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprite/ship.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ship.py" beforeDir="false" afterPath="$PROJECT_DIR$/ship.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ball.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ship.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ship_black.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ship_flame.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ship_flame_black.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leaf.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/leaf.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rect.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/rect.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,22 +27,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ship.py">
+        <entry file="file://$PROJECT_DIR$/move_02.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="91" column="34" lean-forward="true" selection-end-line="147" />
+            <state relative-caret-position="285">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.3/python_stubs/1537952624/math.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -64,6 +58,7 @@
       <find>set_vo</find>
       <find>start</find>
       <find>angle</find>
+      <find>current)h</find>
     </findStrings>
     <replaceStrings>
       <replace>load(img_base_path +'</replace>
@@ -99,12 +94,18 @@
         <option value="$PROJECT_DIR$/leaf_02.py" />
         <option value="$PROJECT_DIR$/leaf_02_b.py" />
         <option value="$PROJECT_DIR$/leaf_03.py" />
+        <option value="$PROJECT_DIR$/sprite/const.py" />
         <option value="$PROJECT_DIR$/ship.py" />
+        <option value="$PROJECT_DIR$/sprite/define.py" />
+        <option value="$PROJECT_DIR$/sprite/ship.py" />
+        <option value="$PROJECT_DIR$/move_01.py" />
+        <option value="$PROJECT_DIR$/move_02.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="254" />
+    <option name="y" value="32" />
     <option name="width" value="1393" />
     <option name="height" value="877" />
   </component>
@@ -116,7 +117,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,10 +124,21 @@
               <item name="pygame_tutorials" type="b2602c69:ProjectViewProjectNode" />
               <item name="pygame_tutorials" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="pygame_tutorials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pygame_tutorials" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pygame_tutorials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pygame_tutorials" type="462c0819:PsiDirectoryNode" />
+              <item name="sprite" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -135,15 +146,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/music" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/img/enemy" />
       <recent name="$PROJECT_DIR$/img/actor" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/music" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -158,8 +169,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ship">
-    <configuration name="leaf_01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.move_02">
+    <configuration name="ball" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pygame_tutorials" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -171,7 +182,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leaf_01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ball.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -201,27 +212,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="leaf_02_b" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pygame_tutorials" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leaf_02_b.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="leaf_03" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pygame_tutorials" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -243,7 +233,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ship" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="move_01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pygame_tutorials" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -255,7 +245,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ship.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/move_01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="move_02" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pygame_tutorials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/move_02.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -285,13 +296,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.tutorial_2" />
+      <item itemvalue="Python.ball" />
+      <item itemvalue="Python.leaf_02" />
+      <item itemvalue="Python.leaf_03" />
+      <item itemvalue="Python.move_01" />
+      <item itemvalue="Python.move_02" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ship" />
+        <item itemvalue="Python.move_02" />
+        <item itemvalue="Python.move_01" />
+        <item itemvalue="Python.ball" />
         <item itemvalue="Python.leaf_02" />
         <item itemvalue="Python.leaf_03" />
-        <item itemvalue="Python.leaf_02_b" />
-        <item itemvalue="Python.leaf_01" />
       </list>
     </recent_temporary>
   </component>
@@ -334,15 +353,22 @@
       <option name="project" value="LOCAL" />
       <updated>1546787297929</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="新增飞船控制">
+      <created>1547371499243</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1547371499243</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1393" height="877" extended-state="0" />
+    <frame x="0" y="23" width="1402" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.2568306" weight="0.16728076" />
-      <window_info id="Structure" order="1" sideWeight="0.7431694" side_tool="true" visible="true" weight="0.16982508" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.25475284" visible="true" weight="0.21723388" />
+      <window_info id="Structure" order="1" sideWeight="0.7452471" side_tool="true" weight="0.16690962" />
       <window_info id="Favorites" order="2" sideWeight="0.50185186" side_tool="true" weight="0.24580598" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
@@ -387,6 +413,8 @@
     <MESSAGE value="添加注释" />
     <MESSAGE value="新增飞船控制" />
     <option name="LAST_COMMIT_MESSAGE" value="新增飞船控制" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -395,11 +423,6 @@
           <url>file://$PROJECT_DIR$/tutorial_7.py</url>
           <line>50</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ship.py</url>
-          <line>84</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -461,27 +484,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/img/actor/L1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/enemy/L1E.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/actor/L2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/actor/L3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/actor/L4.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/actor/L5.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/actor/L6.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/actor/L7.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -578,9 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/ship_flame.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/bg.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -607,13 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ball.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tutorial_2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="47">
@@ -621,7 +613,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leaf.png">
+    <entry file="file://$PROJECT_DIR$/img/leaf.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial_4.py">
@@ -685,9 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/ship.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/study_01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -739,7 +728,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rect.png">
+    <entry file="file://$PROJECT_DIR$/img/rect.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/study_02.py">
@@ -758,17 +747,76 @@
     </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.3/python_stubs/1537952624/math.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="1080">
           <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ship.py">
+    <entry file="file://$PROJECT_DIR$/ball.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="91" column="34" lean-forward="true" selection-end-line="147" />
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pygame/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="164" column="21" selection-start-line="164" selection-start-column="21" selection-end-line="164" selection-end-column="21" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#1166#1176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.3/python_stubs/1537952624/pygame/display.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="79" column="4" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sprite/define.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/ship.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sprite/ship.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="77" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/ship_white.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/ship_flame_black.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/ship_black.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/move_01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="16" lean-forward="true" selection-end-line="74" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/move_02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
