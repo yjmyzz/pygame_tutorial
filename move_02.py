@@ -19,7 +19,7 @@ pygame.display.set_caption("ship")
 img_base_path = os.getcwd() + '/img/'
 
 ship = Ship(img_base_path, "ship_white.png", "ship_flame_white.png")
-ship.scale = 0.8
+ship.scale = 0.5
 ship.show_rect = False
 # 摩擦系数
 friction = 0.995
